@@ -1,0 +1,381 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>英华逸游</title>
+     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="css/bootstrap.css" rel ="stylesheet"/>
+    <script src="js/jquery.js"></script>    
+    <script src="js/bootstrap.min.js"></script>
+    <style>
+        .container-fluid{
+            padding: 0px;
+            margin:0px;
+
+        }
+        .navbar{
+            
+            border:0px;
+            background-color:transparent;
+        }
+        body{
+            background-image: url(back.png);
+        }
+        a:hover{
+            color:orange;
+            border-bottom:1px solid orange;
+        }
+       @media screen and (min-width:1200px){
+           #log{
+               
+           }
+        #login{
+            background-color:#282828;
+            height:45px;
+        }
+        #earphone{
+            margin-right:5px
+        }
+        #carH{
+            display:none;
+        }
+        #carh1{
+            visibility: hidden;
+        }
+        .bottomp{
+               display:inline-block;
+               font-size:0.7em;
+               color:white;
+               margin:9px;
+           }
+           #hiddenb{
+               display:none;
+           }
+           #btnhidden{
+            position:relative;
+            top:-70px;
+            left:500px;
+           }
+           #tiao{
+            display:none;
+            
+           }
+       }
+       @media screen and (max-width:1000px){
+           #log{
+               visibility:hidden;
+           }
+           #zhedie{
+               position:relative;
+               top:-50px;
+           }
+           #zhedie2{
+            position:relative;
+               top:-50px;
+
+           }
+           #hidebanner2{
+               display: none;
+           }
+           #carH{
+               display:block;
+               position:relative;
+               top:-250px;
+               
+           }
+           #hot1{
+            position:relative;
+            top:-200px;
+           }
+           #hot2{
+            position:relative;
+            top:50px;
+           }
+           #hot3{
+               display:none;
+           }
+           #hot4{
+               display:none;
+           }
+           #hot5{
+               display:none;
+           }
+           #hotroute{
+               position:relative;
+               left:-200px;
+               top:-250px;
+           }
+           #popular{
+               display:none;
+           }
+           #p1{
+            position:relative;
+               top:-200px;
+               height:60px;
+               
+           }
+           #hiddenb{
+               display:block;
+               top:130px;
+               left:200px;
+           }
+           #hiddenp{
+               display:none;
+               top:130px;
+           }
+           #btnhidden{
+               left:200px;
+               top:-80px;
+           }
+           #tiao{
+               display:inline-block;
+               width:50px;
+               height:50px;
+               background-color:#cb5405;
+           }
+           
+
+       }
+       
+       
+    </style>
+</head>
+<body>
+    <div class="container-fluid" id="log">
+        <div class="row" id="login" style="">
+            <div class="col-md-3 col-md-offset-8" style="position:relative;top:10px"><img src="tell.png" id="earphone"/><span style="color:white">400-808-8682</span></span></div>
+            <div class="col-md-3 col-md-offset-10" style="color:white;position:relative;top:-15px">请登录|注册</div>
+        </div>
+    </div>
+
+        <div class="container">
+        <div class="row"   style="height:80px">
+            <div class="col-md-3"><img class="img-responsive" src="logo.png"/></div>
+            <div class="col-md-6" >
+                <nav class="navbar navbar-default" > 
+                    <div class="container-fluid">
+                          <div class="navbar-header" id="zhedie">
+                            <button  type="button" class="navbar-toggle" data-toggle="collapse" data-target="#bs-1">
+                                  <span class="sr-only">导航开关</span>
+                                  <span class="icon-bar"></span>
+                                  <span class="icon-bar"></span>
+                                  <span class="icon-bar"></span>
+                            </button>
+                           
+                          </div>
+                          <div class="collapse navbar-collapse" id="bs-1">
+                            <ul class="nav navbar-nav" id="zhedie2">
+                                 
+                                  <li><a href="#">首页</a></li>
+                                  <li><a href="#">热门路线</a></li>
+                                  <li><a href="#">签证推荐</a></li>
+                                  <li><a href="#">使命愿景</a></li>    
+                            </ul>   
+                        </div>
+                    </div>
+                </nav>
+            </div>
+        </div>
+        </div>
+
+        <div class="container-fluid" style="height:450px;" >
+        <img src="banner.jpg" class="img-responsive"/>
+
+            <div id="hiddenp" style="color:white;opacity: 0.7;;position:absolute;top:180px;left:200px;background-color:transparent">
+            <h3 style="display:inline-block">悠游古欧洲&nbsp;&nbsp;</h3>
+            <h3 style="display:inline-block">遍览德法瑞意</h3><br/>
+            ————————————————————————
+            <h5>巴黎卢浮宫、塞纳河游船、凡尔赛宫</h5>
+                <h5>少女峰、大运河游船、金色列车、西庸城堡
+            </h5><br/>
+            ————————————————————————
+        </div>
+        <div id="hiddenb" style="color:white;opacity: 0.7;;position:absolute;background-color:transparent">
+            <h3 style="display:inline-block">悠游古欧洲&nbsp;&nbsp;</h3>
+            <h3 style="display:inline-block">遍览德法瑞意</h3><br/>
+            <h5>全程升级热早+1晚5星酒店</h5>
+                
+        </div>
+        <div id="btnhidden" class="btn-group" >
+            <button type="button" class="btn btn-default" style="background-image: url(position.png);background-color:#d3d3d8 ;background-repeat: no-repeat;">&nbsp;&nbsp; 目的地</button>
+             <button type="button" class="btn btn-default" style="background-color: #e1e1e1;color:gray">|日本&nbsp;美国&nbsp;英国&nbsp;地中海</button>
+             <button type="button" class="btn btn-default" style="height:34px;width:35px;background-image: url(search.png);background-color: #cb5405;background-repeat: no-repeat;"></button>
+          </div>
+
+
+        </div>
+        </div>
+        <div class="container" style="height:360px;margin-top:30px">
+        <div class="row" id="hidebanner2">
+            <div class="col-md-9"><img src="Sbanner2.jpg" /></div>
+            <div class="col-md-3" style="background-color:#14316d;height:363px"><img src="car.png" style="position: relative;top:80px;left:80px"/>
+            <p style="color:white;position: relative;top:95px;left:105px">车辆接送</p><button type="button" class="btn  btn-primary" style="border:1px solid white;background-color:#14316d;position:relative;top:100px;left:90px">查看详情</button></div>
+            
+        </div>
+        <div class="row" style="position:relative;top:-20px;"><div id="carH" style="background-color:white;height:150px"><img id="carh1" src="carH.png" style="position:relative;top:30px;left:30px"/><h3 style="color:#14316d;position:relative;left:150px;top:-80px">机场接送省心省力</h3><p style="position:relative;left:150px;top:-80px">提供上海、苏州、无锡各市</p><p style="color:slategray;position:relative;left:150px;top:-80px">往返机场、码头接送服务，更有包车服务</p><button type="button" class="btn  btn-primary" style="border:1px solid grey;background-color:white;position:relative;top:-150px;left:450px;color:grey">查看详情</button></div> </div>
+        <div class="container" style="padding:20px 0px 20px 0px">
+            <div id="tiao"></div>
+        <h4 class="text-center" id="hotroute" >热门线路</h4>
+        <h4 class="text-center" id="popular">Popular tourist routes</h4>
+        <div class="container-fluid">
+            <div class="row">
+                <div class="col-md-6" id="hot1"><img src="hot1.jpg" style="width:600px;position:relative;left:-15px" /></div>
+                <div class="col-md-6" id="hot3"><img src="hot3.jpg" style="height:290px"/></div>
+            </div>
+            <div class="row">
+                <div class="col-md-6" id="p1" style="background-color:black;color:white;height:100px">
+                <p >海南三亚5天4晚，纯玩、4晚红树林度假王国</p>￥2580/人起</p></div>
+               
+                <div class="col-md-6" id="hot4"><img src="hot4.jpg" style="height:350px;position:relative;top:-90px"/></div>
+            </div>
+            <div class="row">
+                
+                <div class="col-md-6" id="hot2"><img src="hot2.jpg" style="width:600px;position:relative;top:-240px;left:-15px"/></div>
+                <div class="col-md-6" id="hot5"><img src="hot5.jpg" style="position: relative;top:-80px"/></div>
+            </div>
+            <div class="row">
+                <div class="col-md-6" id="p2" style="height:80px;background-color:black;color:white;position: relative;top:-240px">
+                    <p>德法意瑞欧洲四国，ABCD任意线路由您挑选</p>
+                    <p>￥7999/人起</p>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="container" style="padding:20px 0px 20px 0px;position:relative;top:-230px">
+        <h4 class="text-center">使命与愿景</h4>
+        <h5 class="text-center">让旅游回归本质，体验纯粹旅游</h5></div>
+        <div class="container" style="height:360px;margin-top:30px">
+            <div class="row" style="position:relative;top:-240px">
+                <div class="col-md-5"><img src="mission1.jpg" /></div>
+                <div class="col-md-7" style="background-color:#14316d;height:350px">
+                <h4 style="color:white;position: relative;top:80px;left:200px">服务理念及优势</h4><h5 style="color:white;position:relative;top:100px;left:100px">“英华逸游”通过重新打造旅游全程中的产品线路设计、出行交通方案、<br/>陪游向导服务、增值关怀项目等，为客户提供高品质的旅游体验，英华逸<br/>游在泰国、欧洲等多个国家拥有丰富的旅游资源，同时致力于给用户提<br/>供性价比高的产品和服务。</h5></div>
+            </div>
+            <div class="container" style="position:relative;top:-235px" >
+                <div class="row"><img src="mission2.jpg" style="height:455px"/></div>
+            </div>
+            <div class="container" style="height:370px;background-color:#14316d ;position:relative;top:-230px">
+            <div class="row" >
+                <div class="col-md-4"><img src="rorate.png" style="position:relative;left:60px;top:45px"/><img src="icon1.png" style="position:relative;left:-60px;top:30px"/><p style="color:white;position:relative;left:130px;top:-12px">品质行程</p></div>
+                <div class="col-md-4"><img src="rorate.png" style="position:relative;left:60px;top:45px"/><img src="icon2.png" style="position:relative;left:-60px;top:30px"/><p style="color:white;position:relative;left:130px;top:-12px">品质消费</p></div>
+                <div class="col-md-4"><img src="rorate.png" style="position:relative;left:60px;top:45px"/><img src="icon3.png" style="position:relative;left:-60px;top:30px"/><p style="color:white;position:relative;left:130px;top:-12px">品质小团</p></div>
+            </div>
+            <div class="row" style="color:white">
+                <div class="col-md-4 " style="position:relative;top:30px;left:35px">旅游达人精心设计，基于口碑反复打磨</div>
+                <div class="col-md-4 " style="position:relative;top:30px;left:130px">不推自费</div>
+                <div class="col-md-4 " style="position:relative;top:30px;left:115px">独立成团不散拼</div>
+                
+            </div>
+            <div class="row" style="color:white">
+                <div class="col-md-4 " style="position:relative;top:30px;left:65px">全网最好，敢跟任何产品比</div>
+                <div class="col-md-4 " style="position:relative;top:30px;left:85px">不进垃圾购物点和伪景点</div>
+                <div class="col-md-4 " style="position:relative;top:30px;left:65px">只跟亲朋好友一起玩，每天发团</div>
+                
+            </div>
+            
+            </div>
+            
+
+
+            <div class="container-fluid" style="background-color:black;position: relative;top:-227px;width:100%">
+                <div class="row" style="padding-top:30px">
+                    <div class="col-md-1 col-md-push-1"><img style="width:90px;margin-left: 10px;" src="xiecheng.png"/></div>
+                    <div class="col-md-1 col-md-push-1"><img style="width:90px;margin-left: 10px;" src="feizhu.png"/></div>
+                    <div class="col-md-1 col-md-push-1"><img style="width:90px;margin-left: 10px;" src="quna.png"/></div>
+                    <div class="col-md-1 col-md-push-1"><img style="width:90px;height:35px;margin-left: 10px;" src="suzhou.png"/></div>
+                </div>
+                <div class="row" style="padding-top:30px">
+                    <div class="col-md-1 col-md-push-1"><p style="color:white;position:relative;left:35px;top:-20px">携程网</p></div>
+                    <div class="col-md-1 col-md-push-1"><p style="color:white;position:relative;left:32px;;top:-20px">阿里飞猪</p></div>
+                    <div class="col-md-1 col-md-push-1"><p style="color:white;position:relative;left:35px;top:-20px">去哪儿</p></div>
+                    <div class="col-md-2 col-md-push-1"><p style="color:white;position:relative;left:20px;top:-20px">苏州旅游局</p></div>
+                </div>
+                <div style="position:relative;left:20px">
+                    <div style="font-size:1.2em;color:white;display:inline-block;margin-right:5px">热门位置</div>
+                    
+                    <div class="bottomp">韩国</div>
+                    <div class="bottomp">日本</div>
+                    <div class="bottomp">菲律宾</div>
+                    <div class="bottomp">越南</div>
+                    <div class="bottomp">老挝</div>
+                    <div class="bottomp">柬埔寨</div>
+                    <div class="bottomp">泰国</div>
+                    <div class="bottomp">马来西亚</div>
+                    <div class="bottomp">新加坡</div>
+                    <div class="bottomp">印度尼西亚</div>
+                    <div class="bottomp">印度</div>
+                    <div class="bottomp">斯里兰卡</div>
+                    <div class="bottomp">土耳其</div>
+                    </div>
+                    <div style="position:relative;left:20px">
+                        <div style="font-size:1.2em;color:black;display:inline-block;margin-right:5px">热门位置</div>
+                        
+                        <div class="bottomp">英国</div>
+                        <div class="bottomp">瑞士</div>
+                        <div class="bottomp">奥地利</div>
+                        <div class="bottomp">德国</div>
+                        <div class="bottomp">匈牙利</div>
+                        <div class="bottomp">俄罗斯</div>
+                        <div class="bottomp">捷克</div>
+                        <div class="bottomp">芬兰</div>
+                        <div class="bottomp">葡萄牙</div>
+                        <div class="bottomp">冰岛</div>
+                        <div class="bottomp">美国</div>
+                        <div class="bottomp">加拿大</div>
+                        <div class="bottomp">巴西</div>
+                        <div class="bottomp">阿根廷</div>
+                        <div class="bottomp">澳大利亚</div>
+                        <div class="bottomp">新西兰</div>
+
+                        </div>
+                        <div style="position:relative;left:20px">
+                        <div style="font-size:1.2em;color:white;display:inline-block;margin-right:5px;">主题服务</div>
+                    
+                        <div class="bottomp">海岛度假</div>
+                        <div class="bottomp">历史文化</div>
+                        <div class="bottomp">探索冒险</div>
+                        <div class="bottomp">美食购物</div>
+                        <div class="bottomp">都市生活</div>
+                        <div class="bottomp">海外留学</div>
+                        <div class="bottomp">邮轮度假</div>
+                        <div class="bottomp">蜜月摄影</div>
+                        <div class="bottomp">亲子乐园</div>
+                        
+                        </div>
+                        <div style="position:relative;left:20px">
+                    <div style="font-size:1.2em;color:white;display:inline-block;margin-right:5px">友情链接</div>
+                    
+                    <div class="bottomp">马蜂窝</div>
+                    <div class="bottomp">穷游</div>
+                    <div class="bottomp">booking</div>
+                    <div class="bottomp">苏州旅游局</div>
+                    <div class="bottomp">驴友网</div>
+                    <div class="bottomp">吾爱全球签证中心</div>
+                    <div class="bottomp">酒店团购</div>
+                    <div class="bottomp">携程旅游攻略</div>
+                    <div class="bottomp">天地职航在线</div>
+                    <div class="bottomp">满天飞旅游网</div>
+                    <div class="bottomp">中国旅游网</div>
+                    <div class="bottomp">澳乐网</div>
+                    <div class="bottomp">背包兔旅游行程</div>
+                    </div>
+                    <div style="position:relative;left:20px">
+                    <div style="font-size:1.2em;color:black;display:inline-block;margin-right:5px">热门位置</div>
+                    
+                    <div class="bottomp">出境旅游</div>
+                    <div class="bottomp">国际酒店</div>
+                    <div class="bottomp">广州旅行社</div>
+                    <div class="bottomp">出境旅游</div>
+                    <div class="bottomp">517旅行</div>
+                    <div class="bottomp">花生游</div>
+                    <div class="bottomp">家园网</div>
+                    <div class="bottomp">海外婚礼</div>
+                   
+                    </div>
+                
+            </div>            
+        
+    
+    
+</body>
+</html>
